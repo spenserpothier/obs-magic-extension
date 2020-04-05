@@ -1,0 +1,20 @@
+{
+  "name": "Mtg Cards for OBS",
+  "description": "Browser extension to display MtG Card image in OBS",
+  "content_scripts" : [
+    {
+      "matches": ["*://*.scryfall.com/*"],
+      "js": [
+        "js/main.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "manifest_version": 2,
+  "version": "0.1",
+  "permissions": [
+    "downloads"
+  ]
+}
